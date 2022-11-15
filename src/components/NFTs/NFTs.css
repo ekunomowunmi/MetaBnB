@@ -1,0 +1,61 @@
+section#nfts {
+    background-color: #a02279;
+}
+.nfts-content.container.flex {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nfts__description {
+    max-width: 423px;
+}
+.nfts__description h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.nfts__description p {
+    font-size: 18px;
+    color: #fff;
+
+    margin-bottom: 57.55px;
+}
+
+button.button.nfts__button {
+    background-color: #fff;
+    color: #a02279;
+    padding: 1.45rem 4.31rem;
+}
+button.button.nfts__button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 859px) {
+    .nfts-content.container.flex {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .nfts__description {
+        display: flex;
+        flex-direction: column;
+        max-width: 423px;
+    }
+    .nfts__description h2,
+    .nfts__description p {
+        text-align: center;
+    }
+    .nfts__description h2 {
+        font-size: 37px;
+    }
+    .nfts__description {
+        max-width: inherit;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nfts__description h2 {
+        font-size: 28px;
+    }
+}

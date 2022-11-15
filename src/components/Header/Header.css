@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding-top: 4.3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    z-index: 999999999;
+    transition: all 0.4s ease;
+}
+.inverted {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 34%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgb(249 249 249 / 59%);
+}
+
+.nav {
+    justify-content: space-between;
+}
+.logoContent img {
+    width: 233px;
+    height: 36.6px;
+}
+
+.nav-links {
+    width: 626px;
+    justify-content: space-between;
+}
+.nav-links a {
+    color: #434343;
+    font-size: 20px;
+}
+
+.nav__button {
+    width: 170px;
+    height: 48px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.hamburgerMenu,
+.closeMenu,
+.nav__button-mobile {
+    display: none;
+}
+/*//////////////////    MEDIA QUERIES   ////////////////////*/
+
+@media screen and (max-width: 1341px) {
+    .nav-links {
+        width: 583px;
+    }
+}
+@media screen and (max-width: 1285px) {
+    .nav-links {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .nav-links {
+        width: 353px;
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .logoContent img {
+        width: 200px;
+        height: 31.6px;
+    }
+}
+@media screen and (max-width: 864px) {
+    .hamburgerMenu,
+    .closeMenu,
+    .nav__button-mobile {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        right: -400px;
+        top: 0rem;
+        box-shadow: 0px 4px 4px #00000040;
+        border-radius: 15px;
+        height: 99vh;
+        transition: all 0.5s ease;
+        background-color: #fff;
+    }
+    .nav-links.open {
+        right: 0;
+    }
+    .nav-links a {
+        font-size: 1.7rem;
+    }
+    .nav__button {
+        display: none;
+    }
+    .nav__button-mobile {
+        width: 170px;
+        height: 48px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+    .hamburgerMenu span, .hamburgerMenu img,
+    .closeMenu span ,.closeMenu img{
+        font-size: 4rem;
+        cursor: pointer;
+        height: 4rem;
+    }
+
+    .closeMenu {
+        position: absolute;
+        top: 36px;
+        right: 26px;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    .logoContent img {
+        width: 155px;
+        height: 23.6px;
+    }
+    .nav-links.open {
+        right: -39px;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 36px;
+        right: 51px;
+    }
+}
